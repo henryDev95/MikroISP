@@ -47,5 +47,5 @@ dependencies {
     testImplementation TestLibraries.jUnit
     androidTestImplementation AndroidTestLibraries.extJUnit
     androidTestImplementation AndroidTestLibraries.espressoCore
-
+    implementation AndroidX.lifecycleRuntimeKtx
 }

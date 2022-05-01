@@ -1,0 +1,9 @@
+<resources>
+    <string name="login_header_text">MikroISP Login</string>
+    <string name="field_required">This field is required</string>
+    <string name="login_username">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login">Login</string>
+    <string name="version">Version</string>
+    <string name="debug_version">Version debug</string>
+</resources>

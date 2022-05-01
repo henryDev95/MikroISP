@@ -22,6 +22,9 @@ object Versions {
     const val constraintCompose = "1.0.0"
     const val lottieCompose = "4.2.2"
     const val liveDataCompose = "1.0.0-alpha02"
+    const val materialCompose = "1.2.0-alpha08"
 
     const val accompanist = "0.24.6-alpha"
+    const val hilt = "2.40.5"
+    const val hiltCompose = "1.0.0"
 }
