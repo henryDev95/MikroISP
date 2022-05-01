@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_header_text">MikroISP Login</string>
+    <string name="field_required">Este campo es requerido</string>
+    <string name="login_username">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login">Ingresar</string>
+    <string name="version">Version</string>
+    <string name="debug_version">Version debug</string>
+</resources>
