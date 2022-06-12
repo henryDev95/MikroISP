@@ -12,9 +12,11 @@ import javax.inject.Inject
 class LoginViewModel @Inject constructor(
 ) : BaseViewModel() {
 
-    fun openLogin() {
+    fun validateData(email: String, pwd: String) {
         viewModelScope.launch {
-               appNavigator.setNavigatorEffect { NavigatorParams(screen = Screens.LoginScreen) }
+               appNavigator.setNavigatorEffect { NavigatorParams(screen = Screens.DashboardScreen) }
         }
     }
+
+
 }

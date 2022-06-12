@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">MikroISP</string>
     <string name="login_header_text">MikroISP Login</string>
     <string name="field_required">Este campo es requerido</string>
     <string name="login_username">Email</string>

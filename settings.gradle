@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "MikroISP"
 include ':app'
 include ':database'
@@ -21,3 +22,5 @@ include ':network'
 include ':core'
 include ':login'
 include ':uikit'
+include ':clientdata'
+include ':dashboard'

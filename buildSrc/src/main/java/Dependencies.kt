@@ -1,3 +1,5 @@
+import org.gradle.api.artifacts.dsl.DependencyHandler
+
 object ApplicationId {
     const val id = "com.loogika.mikroisp"
 }
@@ -11,6 +13,8 @@ object Modules {
     const val database = ":database"
     const val login = ":login"
     const val uikit = ":uikit"
+    const val clientData = ":clientdata"
+    const val dashboard = ":dashboard"
 }
 
 object TestLibraries {
@@ -48,6 +52,14 @@ object AndroidCompose { // dependencia de compose
         "androidx.compose.ui:ui-tooling:${Versions.compose}"
     const val composeConstraintLayout =
         "androidx.constraintlayout:constraintlayout-compose:${Versions.constraintLayoutCompose}"
+    const val coilCompose =
+        "io.coil-kt:coil-compose:${Versions.coilCompose}"
+
+    const val lifecycleViewModelCompose =
+        "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleViewModelCompose}"
+
+    const val lifecycleRuntimeKtx =
+        "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}"
 }
 
 
@@ -69,11 +81,12 @@ object Hilt {
     const val hiltCompiler =
         "com.google.dagger:hilt-compiler:${Versions.hilt}"
     const val hiltNavigationCompose =
-        "androidx.hilt:hilt-navigation-compose:${Versions.hilt}"
-}
-
-object HiltCompose {
-    const val hiltNavigationCompose =
         "androidx.hilt:hilt-navigation-compose:${Versions.hiltCompose}"
 }
 
+object Retrofit {
+    const val retrofit =
+        "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val retrofitGson =
+        "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+}

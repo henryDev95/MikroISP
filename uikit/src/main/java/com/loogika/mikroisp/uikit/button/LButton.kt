@@ -64,19 +64,21 @@ fun LButton(
     }
 }
 
-@Preview("default", "round")
-@Preview("dark theme", "round", uiMode = Configuration.UI_MODE_NIGHT_YES)
+
+
+@Preview("default", "buttons")
+@Preview("dark theme", "buttons", uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
 @Composable
 private fun ButtonPreview() {
     MikroISPTheme {
-        LButton(onClick = {}, text = "Test")
+        LButton(onClick = {}, text = "Button")
     }
 }
 
-@Preview("disabled", "round")
+@Preview("disabled", "buttons", showBackground = true)
 @Composable
 private fun ButtonDisabledPreview() {
     MikroISPTheme {
-        LButton(onClick = {}, text = "Test", enabled = false)
+        LButton(onClick = {}, text = "Button", enabled = false)
     }
 }

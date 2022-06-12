@@ -1,6 +1,7 @@
 package com.loogika.mikroisp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -20,6 +21,7 @@ import com.google.accompanist.navigation.material.rememberBottomSheetNavigator
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.loogika.mikroisp.core.navigation.Screens
 import com.loogika.mikroisp.core.navigation.compose.NavigatorEffect
+import com.loogika.mikroisp.dashboard.DashboardActivity
 import com.loogika.mikroisp.screen.SplashScreen
 import com.loogika.mikroisp.login.ui.screen.LoginScreen
 import com.loogika.mikroisp.uikit.style.MikroISPTheme
@@ -68,6 +70,14 @@ class SplashActivity : ComponentActivity() {
                 ) {
                     LoginScreen()
                 }
+
+                composable(
+                    route = Screens.DashboardScreen.route,
+                ) { route ->
+                    val intent = Intent(applicationContext, DashboardActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
             }
         }
 
@@ -77,6 +87,15 @@ class SplashActivity : ComponentActivity() {
                 {
                     navController.navigate(Screens.LoginScreen.route) {
                         popUpTo(Screens.LoginScreen.route) {
+                            inclusive = true
+                        }
+                    }
+                }
+                is Screens.DashboardScreen -> {
+                    navController.navigate(
+                        Screens.DashboardScreen.route
+                    ) {
+                        popUpTo(Screens.SplashScreen.route) {
                             inclusive = true
                         }
                     }

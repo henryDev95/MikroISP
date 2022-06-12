@@ -5,6 +5,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 
@@ -14,11 +15,11 @@ fun LTextRegular(
     textAlign: TextAlign = TextAlign.Center,
     color: Color = MaterialTheme.colors.primary,
     style: TextStyle = MaterialTheme.typography.body1,
-    maxLines: Int = 1,
-    text: String? = null,
+    maxLines: Int = Int.MAX_VALUE,
+    text: AnnotatedString,
 ) {
     Text(
-        text = text ?: "",
+        text = text,
         modifier = modifier,
         style = style,
         textAlign = textAlign,

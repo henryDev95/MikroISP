@@ -12,9 +12,11 @@ object Versions {
     const val extJUnit = "1.1.3"
     const val espressoCore = "3.4.0"
     //compose
-    const val compose = "1.2.0-alpha08"
+    const val compose = "1.1.1"
+    const val materialCompose = "1.1.1"
+
     const val activityCompose = "1.3.1"
-    const val lifecycleRuntime = "2.3.1"
+    const val lifecycleRuntime = "2.4.0-alpha03"
     const val navigationCompose = "2.4.1"
     const val constraintLayoutCompose = "1.0.0"
     const val lifecycleViewModelCompose = "1.0.0-alpha07"
@@ -22,9 +24,11 @@ object Versions {
     const val constraintCompose = "1.0.0"
     const val lottieCompose = "4.2.2"
     const val liveDataCompose = "1.0.0-alpha02"
-    const val materialCompose = "1.2.0-alpha08"
 
     const val accompanist = "0.24.6-alpha"
     const val hilt = "2.40.5"
-    const val hiltCompose = "1.0.0"
+    const val hiltCompose = "1.0.0-alpha03"
+
+    const val retrofit = "2.9.0"
+
 }

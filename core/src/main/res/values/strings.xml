@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">MikroISP</string>
     <string name="login_header_text">MikroISP Login</string>
     <string name="field_required">This field is required</string>
     <string name="login_username">Email</string>

@@ -1,4 +1,4 @@
-package com.hapicorp.imhapi.login.components.view
+package com.loogika.mikroisp.login.ui.view
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.*
@@ -101,9 +101,9 @@ fun LoginContent(
             onClick = {
                 isValidation.value = true
                 isError.value = true
-                if (passwordState.isValid) {
-                    //viewModel.validateData(emailState.text, passwordState.text)
-                }
+                //if (passwordState.isValid) {
+                    viewModel.validateData(emailState.text, passwordState.text)
+                //}
             },
             text = stringResource(id = R.string.login),
             modifier = Modifier
@@ -116,8 +116,8 @@ fun LoginContent(
         val version = pInfo.versionName
         LTextRegular(
             modifier = Modifier.fillMaxWidth(),
-            text = "${ if (BuildConfig.DEBUG) stringResource(id = R.string.debug_version) else stringResource(id = R.string.version)
-            } $version",
+            text = AnnotatedString("${ if (BuildConfig.DEBUG) stringResource(id = R.string.debug_version) else stringResource(id = R.string.version)
+            } $version"),
             style = MaterialTheme.typography.body1,
             color = MaterialTheme.colors.primary,
             textAlign = TextAlign.Center
