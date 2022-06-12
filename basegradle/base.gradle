@@ -1,3 +1,6 @@
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
 android {
     compileSdk Versions.compileSdk
 
@@ -48,4 +51,10 @@ dependencies {
     androidTestImplementation AndroidTestLibraries.extJUnit
     androidTestImplementation AndroidTestLibraries.espressoCore
     implementation AndroidX.lifecycleRuntimeKtx
+    //hilt
+    api Hilt.hiltAndroid
+    kapt Hilt.hiltCompiler
+}
+kapt {
+    correctErrorTypes true
 }

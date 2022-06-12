@@ -13,4 +13,6 @@ android {
 }
 
 dependencies {
+    implementation AndroidCompose.lifecycleRuntimeKtx
+    implementation AndroidCompose.lifecycleViewModelCompose
 }

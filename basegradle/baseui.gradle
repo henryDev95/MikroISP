@@ -12,8 +12,10 @@ dependencies {
     implementation AndroidCompose.composeMaterial
     implementation AndroidCompose.composePreview
     implementation AndroidCompose.activityCompose
+    implementation AndroidCompose.composeConstraintLayout
     androidTestImplementation AndroidCompose.composeTest
     debugImplementation AndroidCompose.composeTooling
+    implementation(Hilt.hiltNavigationCompose)
 }
 
 

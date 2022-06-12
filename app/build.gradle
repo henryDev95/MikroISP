@@ -1,8 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
 }
 apply from: '../basegradle/baseui.gradle'
 
@@ -10,8 +8,6 @@ android {
 
     defaultConfig {
         applicationId ApplicationId.id
-
-
     }
 
     buildTypes {
@@ -26,16 +22,12 @@ dependencies {
     implementation project(path: Modules.core)
     implementation project(path: Modules.uikit)
     implementation project(path: Modules.login)
+    implementation project(path: Modules.dashboard)
     // accompanist
     implementation(Accompanist.accompanistPager)
     implementation(Accompanist.accompanistIndicators)
     implementation(Accompanist.accompanistNavigation)
     implementation Accompanist.accompanistNavigationMaterial
-
-    //hilt
-    implementation Hilt.hiltAndroid
-    kapt Hilt.hiltCompiler
-    implementation(HiltCompose.hiltNavigationCompose)
 
 }
 
