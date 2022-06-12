@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+apply from: '../basegradle/base.gradle'
+
+android {
+    namespace 'com.loogika.mikroisp.clientdata'
+}
+
+dependencies {
+    //module
+    api project(path: Modules.network)
+    //hilt
+    api Hilt.hiltAndroid
+    kapt Hilt.hiltCompiler
+
+}
+kapt {
+    correctErrorTypes true
+}
