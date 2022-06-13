@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+apply from: '../basegradle/baseui.gradle'
+android {
+    namespace 'com.loogika.mikroisp.home'
+}
+dependencies {
+    implementation project(path: Modules.core)
+    implementation project(path: Modules.uikit)
+    implementation project(path: Modules.domain)
+}
+
+kapt {
+    correctErrorTypes true
+}
