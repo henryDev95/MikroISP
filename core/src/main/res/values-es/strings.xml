@@ -8,4 +8,6 @@
     <string name="login">Ingresar</string>
     <string name="version">Version</string>
     <string name="debug_version">Version debug</string>
+    <string name="client_title">Clients</string>
+    <string name="client_new">Nuevo</string>
 </resources>

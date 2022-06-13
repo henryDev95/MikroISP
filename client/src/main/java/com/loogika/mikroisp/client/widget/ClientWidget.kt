@@ -51,14 +51,14 @@ fun ClientWidget(
                     start.linkTo(parent.start)
                     centerVerticallyTo(parent)
                 }
-                .size(70.dp),
+                .size(60.dp),
             urlImage = item.address
         )
 
         Row(
             modifier = Modifier
                 .constrainAs(newsDetail) {
-                    start.linkTo(newsIcon.end, margin = 15.dp)
+                    start.linkTo(newsIcon.end, margin = 10.dp)
                     end.linkTo(parent.end)
                     width = Dimension.fillToConstraints
                 }

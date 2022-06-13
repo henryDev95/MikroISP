@@ -15,6 +15,7 @@ object Modules {
     const val uikit = ":uikit"
     const val clientData = ":clientdata"
     const val dashboard = ":dashboard"
+    const val home = ":home"
 }
 
 object TestLibraries {
@@ -72,6 +73,8 @@ object Accompanist {
         "com.google.accompanist:accompanist-navigation-animation:${Versions.accompanist}"
     const val accompanistNavigationMaterial =
         "com.google.accompanist:accompanist-navigation-material:${Versions.accompanist}"
+    const val accompanistPlaceHolder =
+        "com.google.accompanist:accompanist-placeholder-material:${Versions.accompanist}"
 
 }
 
