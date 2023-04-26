@@ -1,2 +1,2 @@
 # MikroISP
-Proyecto de grado con JetPak Composer con arquitectura modular.
+Proyecto de grado con jetpack Compose con arquitectura modular, corrutinas, retrofit, dagger hilt.
