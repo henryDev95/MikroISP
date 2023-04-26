@@ -1,2 +1,2 @@
 # MikroISP
-Proyecto de titulaciòn final de grado con JetPak Composer
+Proyecto de grado con JetPak Composer con arquitectura modular.
